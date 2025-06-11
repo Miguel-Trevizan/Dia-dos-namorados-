@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Surpresa pra Você ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+        .montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .heart-beat {
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-red-50 min-h-screen montserrat">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header with animated heart -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-bold text-red-500 dancing-script mb-6 fade-in">
+                Feliz Dia dos Namorados, Amor!
+            </h1>
+            <div class="heart-beat inline-block text-6xl text-red-500">❤️</div>
+        </header>
+
+        <!-- Main content with surprise sections -->
+        <main>
+            <!-- Love letter section -->
+            <section class="mb-16 bg-white rounded-xl shadow-lg p-6 md:p-8 max-w-3xl mx-auto transform transition duration-500 hover:scale-105">
+                <h2 class="text-2xl md:text-3xl font-bold text-pink-600 dancing-script mb-4">Uma Carta do Meu Coração</h2>
+                <div class="text-gray-700 text-lg leading-relaxed">
+                    <p class="mb-4">Querida amor,</p>
+                    <p class="mb-4">Hoje é um dia especial para celebrarmos nosso amor, mas quero que saiba que você me faz sentir especial todos os dias do ano.</p>
+                    <p class="mb-4">Cada momento ao seu lado é um presente, cada risada sua ilumina meu dia, e cada desafio que enfrentamos juntos só fortalece nosso laço.</p>
+                    <p class="mb-4">Você é a pessoa que me completa, que me faz querer ser melhor e que enche minha vida de amor e significado.</p>
+                    <p>Com todo meu amor,<br>Seu/a namorado/namorada ❤️</p>
+                </div>
+            </section>
+
+            <!-- Memory gallery -->
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-pink-600 dancing-script mb-8">Nossos Momentos</h2>
+                <div class="relative max-w-3xl mx-auto">
+                    <div class="slideshow-container overflow-hidden rounded-xl shadow-xl">
+                        <div class="slideshow-track flex transition-transform duration-500">
+                            <div class="slideshow-slide min-w-full">
+                                <img src="https://source.unsplash.com/random/800x600/?couple,romantic,1" alt="Memória 1" class="w-full h-80 object-cover">
+                            </div>
+                            <div class="slideshow-slide min-w-full">
+                                <img src="https://source.unsplash.com/random/800x600/?couple,beach,1" alt="Memória 2" class="w-full h-80 object-cover">
+                            </div>
+                            <div class="slideshow-slide min-w-full">
+                                <img src="https://source.unsplash.com/random/800x600/?couple,dinner,1" alt="Memória 3" class="w-full h-80 object-cover">
+                            </div>
+                            <div class="slideshow-slide min-w-full">
+                                <img src="https://source.unsplash.com/random/800x600/?couple,love,1" alt="Memória 4" class="w-full h-80 object-cover">
+                            </div>
+                            <div class="slideshow-slide min-w-full">
+                                <img src="https://source.unsplash.com/random/800x600/?couple,travel,1" alt="Memória 5" class="w-full h-80 object-cover">
+                            </div>
+                            <div class="slideshow-slide min-w-full">
+                                <img src="https://source.unsplash.com/random/800x600/?couple,laugh,1" alt="Memória 6" class="w-full h-80 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slideshow-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-2 shadow-lg text-pink-500 hover:text-pink-700">
+                        ❮
+                    </button>
+                    <button class="slideshow-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-2 shadow-lg text-pink-500 hover:text-pink-700">
+                        ❯
+                    </button>
+                </div>
+            </section>
+
+            <style>
+                .slideshow-container {
+                    position: relative;
+                    width: 100%;
+                }
+                .slideshow-track {
+                    display: flex;
+                }
+                .slideshow-slide {
+                    transition: opacity 0.5s ease;
+                }
+                .slideshow-slide img {
+                    border-radius: 0.75rem;
+                }
+            </style>
+
+            <!-- Reasons I love you -->
+            <section class="mb-16 bg-gradient-to-r from-pink-100 to-red-100 rounded-xl shadow-lg p-6 md:p-8 max-w-3xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-pink-600 dancing-script mb-6">10 Razões Porque Eu Te Amo</h2>
+                <ol class="list-decimal pl-6 text-gray-700 space-y-3">
+                    <li class="fade-in">Você me faz rir mesmo nos dias mais difíceis</li>
+                    <li class="fade-in">Seu coração generoso e amoroso</li>
+                    <li class="fade-in">A forma como você me olha quando pensa que não estou vendo</li>
+                    <li class="fade-in">Sua paciência com minhas manias</li>
+                    <li class="fade-in">Seu cheiro que me acalma instantaneamente</li>
+                    <li class="fade-in">O jeito que você me apoia em tudo</li>
+                    <li class="fade-in">Seu sorriso que ilumina qualquer ambiente</li>
+                    <li class="fade-in">A forma como enfrentamos os desafios juntos</li>
+                    <li class="fade-in">Suas pequenas demonstrações de amor no dia a dia</li>
+                    <li class="fade-in">Porque simplesmente é você, e não consigo imaginar minha vida sem você</li>
+                </ol>
+            </section>
+
+            <!-- Interactive love meter -->
+            <section class="mb-16 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-pink-600 dancing-script mb-4">Nosso Medidor de Amor ❤️</h2>
+                <div class="bg-white rounded-xl shadow-md p-6 max-w-md mx-auto">
+                    <div class="h-4 bg-gray-200 rounded-full mb-4 overflow-hidden">
+                        <div id="love-meter" class="h-full bg-gradient-to-r from-pink-400 to-red-500 rounded-full" style="width: 0%"></div>
+                    </div>
+                    <button id="measure-love" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                        Medir Nosso Amor
+                    </button>
+                    <p id="love-result" class="mt-4 text-xl text-pink-600 font-bold hidden"></p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Floating hearts decoration -->
+        <div class="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0">
+            <div class="absolute text-red-300 text-xl opacity-60" style="top: 10%; left: 15%;">❤️</div>
+            <div class="absolute text-pink-300 text-xl opacity-60" style="top: 25%; left: 75%;">❤️</div>
+            <div class="absolute text-red-200 text-xl opacity-60" style="top: 50%; left: 10%;">❤️</div>
+            <div class="absolute text-pink-200 text-2xl opacity-60" style="top: 65%; left: 80%;">❤️</div>
+            <div class="absolute text-red-300 text-lg opacity-60" style="top: 80%; left: 25%;">❤️</div>
+        </div>
+    </div>
+
+    <script>
+        // Slideshow functionality
+        const slideshowTrack = document.querySelector('.slideshow-track');
+        const slides = document.querySelectorAll('.slideshow-slide');
+        const prevBtn = document.querySelector('.slideshow-prev');
+        const nextBtn = document.querySelector('.slideshow-next');
+        let currentIndex = 0;
+        const slideCount = slides.length;
+
+        function updateSlidePosition() {
+            slideshowTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % slideCount;
+            updateSlidePosition();
+        }
+
+        function showPrevSlide() {
+            currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+            updateSlidePosition();
+        }
+
+        nextBtn.addEventListener('click', showNextSlide);
+        prevBtn.addEventListener('click', showPrevSlide);
+
+        // Auto-advance slides every 5 seconds
+        setInterval(showNextSlide, 5000);
+
+        // Measure love button functionality
+        document.getElementById('measure-love').addEventListener('click', function() {
+            const meter = document.getElementById('love-meter');
+            const resultText = document.getElementById('love-result');
+            
+            // Animate the meter
+            let width = 0;
+            const interval = setInterval(() => {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    resultText.classList.remove('hidden');
+                    resultText.textContent = "100% AMOR VERDADEIRO! ❤️";
+                } else {
+                    width += 5;
+                    meter.style.width = width + '%';
+                }
+            }, 50);
+        });
+
+        // Reveal surprise button functionality
+        document.getElementById('reveal-surprise').addEventListener('click', function() {
+            this.classList.add('hidden');
+            document.getElementById('surprise-content').classList.remove('hidden');
+            
+            // Create confetti effect
+            for (let i = 0; i < 50; i++) {
+                createConfetti();
+            }
+        });
+
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.innerHTML = ['❤️', '💖', '💕', '💘', '💝'][Math.floor(Math.random() * 5)];
+            confetti.style.position = 'fixed';
+            confetti.style.fontSize = Math.random() * 20 + 10 + 'px';
+            confetti.style.left = Math.random() * window.innerWidth + 'px';
+            confetti.style.top = -20 + 'px';
+            confetti.style.zIndex = '9999';
+            confetti.style.opacity = '0.8';
+            confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+            document.body.appendChild(confetti);
+            
+            const animationDuration = Math.random() * 3 + 2;
+            
+            confetti.animate([
+                { top: '-20px', opacity: 1 },
+                { top: window.innerHeight + 'px', opacity: 0 }
+            ], {
+                duration: animationDuration * 1000,
+                easing: 'cubic-bezier(0.1, 0.8, 0.8, 1)'
+            });
+            
+            setTimeout(() => {
+                confetti.remove();
+            }, animationDuration * 1000);
+        }
+    </script>
+</body>
+</html>
